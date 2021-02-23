@@ -1,4 +1,4 @@
-package com.rsc.week1.java;
+package com.rsc.day1.java;
 import java.io.*;
 import java.util.Scanner;
 public class OddNumbers {
