@@ -1,51 +1,40 @@
 package com.srm.day3;
 
-	import java.util.Map;
-	import java.util.TreeMap;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 public class CollectionsUsingTreeMap {
 
-	public static  <FileExtensions> void main(String[] args) {
+	public static   void main(String[] args) {
 		
+		TreeMap<Integer, String> tmap = new TreeMap<>();
 
+		tmap.put(1003, "Revathi");
+		tmap.put(1001, "James");
+		tmap.put(1002, "Shilpa");
+		tmap.put(1004, "Chris");
 
-		  
-		        
-		       
-		           
-		            
-		            
-		        
-
-		
-
-		
-		        TreeMap<Integer, String> customer = new TreeMap<>();
-
-		        customer.put(1003, "Rajeev");
-		        customer.put(1001, "James");
-		        customer.put(1002, "Sachin");
-		        customer.put(1004, "Chris");
-
-		        System.out.println("Customer map : " +  customer);
+		        System.out.println("Customer map : " +  tmap);
 
 		        
-		        System.out.println("Total number of employees : " +  customer.size());
+		        System.out.println("Total number of cutomers : " +  tmap.size());
 
 		       
 		        Integer id = 1004;
-		        if( customer.containsKey(id)) {
+		        if( tmap.containsKey(id)) {
 		            
-		            String name =  customer.get(id);
+		            String name =  tmap.get(id);
 		            System.out.println("Employee with id " + id + " : " + name);
 		        } else {
 		            System.out.println("Employee does not exist with id : " + id);
 		        }
 
-		        System.out.println("----------------------------------------------------------------");
-		        System.out.println("First entry in  customer map : " +  customer.firstEntry());
-		        System.out.println("Last entry in  customer map : " +  customer.lastEntry());
+		        System.out.println("-----------------------------------------------------------------");
+		        System.out.println("First entry in  customer map : " + tmap.firstEntry());
+		        System.out.println("Last entry in  customer map : " + tmap.lastEntry());
 
-		        
+		      
 		       
 		    }
 		
